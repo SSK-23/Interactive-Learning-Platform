@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Learning Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <a href="#" class="nav-logo">Interactive Learning Hub</a>
+        <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#courses">Courses For C.S.E </a></li>
+        </ul>
+        <div class="nav-user">
+            <div class="theme-toggle">
+                <input type="checkbox" id="dark-mode-toggle">
+                <label for="dark-mode-toggle">Dark Mode</label>
+            </div>
+            <div class="text-size-toggle">
+                <input type="checkbox" id="text-size-toggle">
+                <label for="text-size-toggle">Larger Text</label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <section class="hero" style="background-image: url('images/hero-background.jpg');">
+        <div class="hero-overlay">
+            <h1 class="hero-title">Explore the World of CSE</h1>
+            <p class="hero-subtitle">Your journey towards mastering Computer Science starts here.</p>
+            <a href="#courses" class="cta-button">Discover Courses</a>
+        </div>
+    </section>
+
+    <section id="courses" class="courses">
+        <h2 class="section-title">Comprehensive Courses for CSE Students</h2>
+        <div class="filter-options">
+            <label for="category">Filter by Category:</label>
+            <select id="category" class="filter-select">
+                <option value="all">All</option>
+                <option value="programming">Programming</option>
+                <option value="web-development">Web Development</option>
+                <option value="data-science">Data Science</option>
+                <option value="cyber-security">Cyber Security</option>
+                <option value="machine-learning">Machine Learning</option>
+                <option value="software-engineering">Software Engineering</option>
+            </select>
+        </div>
+        <div class="course-cards" id="course-cards">
+            
+            <div class="course-card programming">
+                <h3 class="course-title">Java Programming</h3>
+                <p class="course-description">Learn object-oriented programming with Java.</p>
+                <div class="course-links">
+                    <a href="https://www.w3schools.com/java/" target="_blank" class="external-link">W3Schools Java Tutorial</a>
+                    <a href="https://www.youtube.com/results?search_query=Java+Programming" target="_blank" class="external-link">YouTube Lessons</a>
+                </div>
+                <button class="details-btn">To Be Added</button>
+            </div>
+
+            
+            <div class="course-card programming">
+                <h3 class="course-title">Data Structures & Algorithms</h3>
+                <p class="course-description">Master algorithms and data structures essential for problem-solving.</p>
+                <div class="course-links">
+                    <a href="https://www.geeksforgeeks.org/data-structures/" target="_blank" class="external-link">GeeksforGeeks DSA</a>
+                    <a href="https://www.youtube.com/results?search_query=Data+Structures+and+Algorithms" target="_blank" class="external-link">YouTube Lessons</a>
+                </div>
+                <button class="details-btn">To Be Added</button>
+            </div>
+
+        
+            <div class="course-card machine-learning">
+                <h3 class="course-title">Python for AI & Machine Learning</h3>
+                <p class="course-description">Get started with AI and ML using Python.</p>
+                <div class="course-links">
+                    <a href="https://www.w3schools.com/python/" target="_blank" class="external-link">W3Schools Python Tutorial</a>
+                    <a href="https://www.youtube.com/results?search_query=Python+Machine+Learning" target="_blank" class="external-link">YouTube Lessons</a>
+                </div>
+                <button class="details-btn">To Be Added</button>
+            </div>
+
+        
+            <div class="course-card data-science">
+                <h3 class="course-title">Database Management Systems (DBMS)</h3>
+                <p class="course-description">Learn the principles of database design and management.</p>
+                <div class="course-links">
+                    <a href="https://www.w3schools.com/sql/" target="_blank" class="external-link">W3Schools SQL Tutorial</a>
+                    <a href="https://www.youtube.com/results?search_query=DBMS+Course" target="_blank" class="external-link">YouTube Lessons</a>
+                </div>
+                <button class="details-btn">To Be Added</button>
+            </div>
+
+            
+            <div class="course-card cyber-security">
+                <h3 class="course-title">Introduction to Cyber Security</h3>
+                <p class="course-description">Learn to protect networks and data from cyber threats.</p>
+                <div class="course-links">
+                    <a href="https://www.coursera.org/learn/cyber-security-basics" target="_blank" class="external-link">Coursera Cyber Security</a>
+                    <a href="https://www.youtube.com/results?search_query=Cyber+Security+Basics" target="_blank" class="external-link">YouTube Lessons</a>
+                </div>
+                <button class="details-btn">To Be Added</button>
+            </div>
+
+        
+            <div class="course-card machine-learning">
+                <h3 class="course-title">Introduction to Machine Learning</h3>
+                <p class="course-description">Learn the basics of machine learning models and algorithms.</p>
+                <div class="course-links">
+                    <a href="https://www.coursera.org/learn/machine-learning" target="_blank" class="external-link">Coursera Machine Learning</a>
+                    <a href="https://www.youtube.com/results?search_query=Machine+Learning+Basics" target="_blank" class="external-link">YouTube Lessons</a>
+                </div>
+                <button class="details-btn">To Be Added</button>
+            </div>
+
+            
+            <div class="course-card software-engineering">
+                <h3 class="course-title">Software Engineering Principles</h3>
+                <p class="course-description">Understand the core principles of software development and project management.</p>
+                <div class="course-links">
+                    <a href="https://www.coursera.org/learn/software-development" target="_blank" class="external-link">Coursera Software Engineering</a>
+                    <a href="https://www.youtube.com/results?search_query=Software+Engineering" target="_blank" class="external-link">YouTube Lessons</a>
+                </div>
+                <button class="details-btn">To Be Added</button>
+            </div>
+
+    
+            <div class="course-card web-development">
+                <h3 class="course-title">Web Development with HTML, CSS & JavaScript</h3>
+                <p class="course-description">Learn to build dynamic and responsive websites.</p>
+                <div class="course-links">
+                    <a href="https://www.w3schools.com/html/" target="_blank" class="external-link">W3Schools HTML</a>
+                    <a href="https://www.youtube.com/results?search_query=Web+Development" target="_blank" class="external-link">YouTube Lessons</a>
+                </div>
+                <button class="details-btn">To Be Added</button>
+            </div>
+
+            
+            <div class="course-card data-science">
+                <h3 class="course-title">Introduction to Data Science</h3>
+                <p class="course-description">Explore data analysis and visualization techniques.</p>
+                <div class="course-links">
+                    <a href="https://www.coursera.org/specializations/data-science-python" target="_blank" class="external-link">Coursera Data Science</a>
+                    <a href="https://www.youtube.com/results?search_query=Data+Science+Basics" target="_blank" class="external-link">YouTube Lessons</a>
+                </div>
+                <button class="details-btn">To Be Added</button>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer>
+        <p class="footer-text">&copy; 2024 SSK-23 </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
